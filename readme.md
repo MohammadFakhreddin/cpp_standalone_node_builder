@@ -24,5 +24,5 @@ It would compile all .cpp and .c files inside src and run the code if no error e
 I wrote this code to write c++ code without need for visual studio and xCode to run them
 
 ## TODO 
-I have to create makefile instead of running from command line in feature 
+I have to create makefile instead of running from command line in future
 
