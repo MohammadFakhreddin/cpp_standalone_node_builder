@@ -3,3 +3,4 @@ node_modules/*
 node_modules
 build_tools/build/*
 build_tools/build
+package-lock.json
