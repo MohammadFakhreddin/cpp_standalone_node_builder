@@ -1,0 +1,42 @@
+{
+  "name": "word_game",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build_tools": "npm run build-ts && npm run tslint ",
+    "compile": "node build_tools/build/main.js && ./a.out",
+    "watch": "npm run watch-ts",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "debug": "npm run build && npm run watch-debug"
+  },
+  "dependencies": {
+    "colors": "1.3.3",
+    "debug": "3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "9.6.5",
+    "ts-jest": "22.4.6",
+    "ts-node": "5.0.1",
+    "tslint": "5.11.0",
+    "typescript": "3.1.6"
+  },
+  "jest": {
+    "automock": false,
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "setupFiles": [],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testPathIgnorePatterns": [
+      "\\.snap$",
+      "<rootDir>/node_modules/",
+      "<rootDir>/lib/"
+    ],
+    "cacheDirectory": ".jest/cache"
+  }
+}
