@@ -3,5 +3,6 @@
 
 int main()
 {
+	std::cout<<"I'm running"<<std::endl;
 	return 0;
 }

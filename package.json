@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build_tools": "npm run build-ts && npm run tslint ",
-    "compile": "node build_tools/build/main.js && ./a.out",
+    "compile":"node build_tools/build/main.js",
     "watch": "npm run watch-ts",
     "build-ts": "tsc",
     "watch-ts": "tsc -w",
